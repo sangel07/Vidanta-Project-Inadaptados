@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+body{
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: "Nunito";
+    background-image: url(images/fondo-body.jpg);
+    background-size: cover;
+}
+.boton{
+    padding: 10px 20px;
+    background-color: #66AAA0;
+    border-radius: 100px;
+    font-size: 13px;
+    color: white;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+.boton:hover{
+    background-color: #4e867e;
+}
+.container{
+    padding: 12px 48px;
+}
+h1,h2,h3,h4,h5{
+    font-family: "Libre Bodoni";
+}
+h1{
+    color: #FFFFFF ;
+}
+h2{
+    color: #222222 ;
+
+}
+span{
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/*Menu nav*/
+#menu-nav ul{
+    display: flex;
+}
+#menu-nav ul li {
+    padding-right: 1.2rem;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.text-white {
+    color: white ;
+    font-weight: bold;
+}
+.text-gray{
+    color: #222222;
+    font-weight: bold;
+}
+#idiomas-container{
+    margin-right: 5%;
+}
+#idiomas-container ul{
+    display: flex;
+}
+
+#idiomas-container a{
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+#idiomas-container #es{
+    border-right: 2px solid rgba(34, 34, 34, .3);
+}
+#header-container{
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 48px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    transition: transform 0.3s ease; 
+}
+
+.scrolled{
+    transition: transform 0.3s ease; 
+    background-color: #ffffff;
+}
+
+#logo-vidanta{
+    max-height: 55px;
+}
+/*Inicio*/
+#inico-background{
+    background-image: url("images/inicio.gif");
+    background-position: center;
+    background-size: cover;
+}
+
+/*Explore el lujo*/
+#container-titulo{
+    margin: 25%;
+}
+#container-titulo h1{
+    text-align: center;
+    font-size: 70px;
+}
+/*Bienvenida*/
+#bienvenido-background{
+    background-image: url("images/bienvenido.jpg");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    padding: 0 auto;
+    
+}
+#texto-bienvenido{
+    text-align: center;
+    padding-bottom: 15%;
+}
+#texto-bienvenido h2{
+    font-size: 35px;
+    color: #205375 ;
+    font-weight: normal;
+}
+#texto-bienvenido p{
+    
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+    line-height: 1.3;
+}
+
+#bienvenido-container{
+    padding: 5%;
+}
+/*Lujo en el MAR*/
+#lujo-mar{
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 20px;
+    letter-spacing: 1px;   
+}
+#lujo-mar h2{
+    color: #205375;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+#lujo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px; /* Espaciado entre elementos */
+    padding-left:65%;
+    padding-bottom: 15%;
+}
+#lujo-background{
+    flex-direction: column;
+    background-image: url("images/elegant.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#conozca-más-lujo img{
+    margin-top: 15%;
+}
+ /*Destinos*/
+ #texto-destinos{
+    text-align: center;
+ }
+ #texto-destinos h2{
+    margin-top: 5%;
+    font-size: 30px;
+    color: #205375;
+    letter-spacing: 2px;
+ }
+#texto-destinos p{
+    color:#848484;
+ }
+
+.card-destinos{
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden; /*Evita que la imagen salga del recuadro*/
+    transition: transform 0.3s ease; 
+}
+.card-destinos a{
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+ }
+.card-destinos img{
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+ }
+.contenedor-destinos{
+    margin: 0 120px;
+    transition: transform 0.3s ease;    
+}
+.contenedor-text-destinos{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    backdrop-filter: blur(20px);
+}
+.contenedor-text-destinos p{
+    color: white;
+}
+.card-destinos img:hover{
+    transform: scale(1.2);
+ }
+/*Hoteles Resort*/
+#text-hoteles h2{
+    padding-top: 10%;
+    font-size: 35px;
+    color: #205375;
+    letter-spacing: 1px; 
+}
+#text-hoteles p{
+    color:#848484;
+}
+#text-hoteles{
+    text-align: center;
+    margin: 0px auto;
+}
+/*Cards*/
+.card {
+    margin: 0 auto;
+    list-style: none; 
+    margin: 10px;
+    position: relative;
+    width: 250px;
+    height: 400px;
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    border-radius: 15px; /* Esquinas redondeadas */
+    transition: transform 0.5s ease; 
+}
+.card-logo{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 0px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    backdrop-filter: blur(20px);
+}
+.card:hover{
+    transform: translateY(-20px);
+}
+#cards-container-list{
+    display: flex;
+}
+
+/*Experiencias*/
+#experiencias-background{
+    background-image: url("images/experiencias.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 0%;
+    margin-top: 180px;
+    margin-bottom: 80px;
+}
+#experiencias-background h2{
+    color: #FFFFFF;
+    font-size: 40px;
+}
+#text-experiencias{
+    text-align: end;
+    padding: 14% 30px;
+}
+
+#galeria-experiencias p{
+    color: #848484;
+}
+
+/*Atracciones*/
+.contenedor-experiencias{
+    margin-bottom: 70px;
+}
+.card-experiencias{
+    list-style: none; 
+    position: relative;
+    height: 350px;
+    width: 450px;
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    border-radius: 15px; /* Esquinas redondeadas */
+    transition: transform 0.5s ease; 
+    background-color: white;
+    margin: 10px;
+}
+.caract-activity{
+    display: flex;
+}
+.size-icon{
+    width: 15px;
+    margin: 10px;
+}
+.size-logo{
+    width: 100%;
+    padding: 0 auto;
+    padding-top: 30%;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;    /* Centra verticalmente */
+}
+.card-experiencias a{
+    display: flex;
+    color: #848484;
+}
+.activity-center{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;    /* Centra verticalmente */
+}
+
+/*Final*/
+#final img{
+    margin: 0 auto;
+    width: 100%;
+}
+/*footer*/
+#container-footer{
+    background-color: #002038;
+    margin-top: -10px;
+    text-decoration: none;
+    
+}
+footer a{
+    color: #ffffff;
+}
+footer a:hover{
+    color: #5a839e;
+}
+#container-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 250px;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#seccion-1 a{
+    text-align: center;
+}
+#redes{
+    padding: 0 auto;
+}
+.redes-flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.redes-flex p {
+    margin: 0;
+    font-size: 14px;
+}
+.redes-flex i {
+    font-size: 20px;
+}
+#imagen-footer img{
+    width: 30%;
+    margin: 10px;
+    margin-left: 150px;
+}
+#seccion-2{
+    line-height: 2;
+    text-align: center;
+}
+#seccion-3{
+    line-height: 2;
+    text-align: center;
+}
+#seccion-1{
+    text-align: center;
+}
+.list-share i{
+    color: #96ceb4;
+}
+
+/*Reservado*/
+#reservado{
+    background-color: #35858B;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+/*Animacion*/
+@keyframes mover{
+    0%{
+        transform: translate(100%);
+    }
+}
+
+@keyframes mover-vertical{
+    from{
+        transform: translateY(150%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes mover-vertical-cards{
+    from{
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
